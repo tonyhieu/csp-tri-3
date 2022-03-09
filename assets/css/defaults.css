@@ -1,11 +1,16 @@
 :root {
-  --bg-color: white;
-  --text-color: black;
+  --bg-color: #f7ba58;
+  --text-color: #153c34;
+  --body-bg-color: #fee776;
 }
 
 html, body {
   margin: 0px;
   height: 100%;
+}
+
+body {
+  background-color: var(--body-bg-color);
 }
 
 .center {
@@ -36,13 +41,7 @@ html, body {
   font-family: "Comic Sans MS", cursive;
 }
 
-.main-content .project-title {
-  font-size: 8vh;
-  position: absolute;
-  top: 0%;
-}
-
-.main-content .caption {
+.main-content .title {
   font-size: 6vh;
   position: absolute;
   top: 10%;
@@ -146,5 +145,35 @@ html, body {
 
 .main-content .content h2 {
   font-size: 40px;
+}
+
+.main-content .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.main-content .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-content .dropdown .dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.main-content .dropdown .dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+.main-content .dropdown:hover .dropdown-content {
+  display: block;
 }
 /*# sourceMappingURL=defaults.css.map */
