@@ -2,6 +2,8 @@
   --bg-color: #f7ba58;
   --text-color: #153c34;
   --body-bg-color: #fee776;
+  --dropdown-text-color: #898078;
+  --dropdown-hover-text-color: #e6ac93;
 }
 
 html, body {
@@ -42,94 +44,9 @@ body {
 }
 
 .main-content .title {
-  font-size: 6vh;
+  font-size: 3.5vw;
   position: absolute;
   top: 10%;
-}
-
-.main-content a, .main-content a:link, .main-content a:visited, .main-content a:hover, .main-content a:active {
-  font-size: 3vw;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.main-content a::after {
-  content: '';
-  background: var(--text-color);
-  display: block;
-  height: 2px;
-  width: 100%;
-  opacity: 0;
-}
-
-.main-content a.wasHovered::after {
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-name: deselect;
-          animation-name: deselect;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.main-content a:hover::after {
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-name: select;
-          animation-name: select;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes select {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes select {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes deselect {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-
-@keyframes deselect {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
 }
 
 .main-content .content {
@@ -147,9 +64,17 @@ body {
   font-size: 40px;
 }
 
+.main-content .links p, .main-content .links a, .main-content .links a:active, .main-content .links a:visited {
+  font-size: 2vw;
+  color: var(--dropdown-text-color);
+  text-decoration: none;
+}
+
 .main-content .dropdown {
   display: inline-block;
   position: relative;
+  -webkit-transform: translateX(21.5vw);
+          transform: translateX(21.5vw);
 }
 
 .main-content .dropdown .dropdown-content {

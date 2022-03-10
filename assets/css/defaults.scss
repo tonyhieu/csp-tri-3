@@ -1,11 +1,15 @@
 $bg-color: #f7ba58;
 $text-color: #153c34;
 $body-bg-color: #fee776;
+$dropdown-text-color: #898078;
+$dropdown-hover-text-color: #e6ac93;
 
 :root {
     --bg-color: #{$bg-color};
     --text-color: #{$text-color};
     --body-bg-color: #{$body-bg-color};
+    --dropdown-text-color: #{$dropdown-text-color};
+    --dropdown-hover-text-color: #{$dropdown-hover-text-color};
 }
 
 html, body {
@@ -41,56 +45,9 @@ body {
     font-family: "Comic Sans MS", cursive;
 
     .title {
-        font-size: 6vh;
+        font-size: 3.5vw;
         position: absolute;
         top: 10%;
-    }
-
-    a, a:link, a:visited, a:hover, a:active {
-        font-size: 3vw;
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    a::after {
-        content: '';
-        background: var(--text-color);
-        display: block;
-        height: 2px;
-        width: 100%;
-        opacity: 0;
-    }
-    a.wasHovered::after {
-        animation-duration: 0.2s;
-        animation-name: deselect;
-        animation-fill-mode: forwards;
-    }
-    a:hover::after {
-        animation-duration: 0.2s;
-        animation-name: select;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes select {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-
-    @keyframes deselect {
-        from {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        to {
-            opacity: 0;
-            transform: translateY(10px);
-        }
     }
 
     .content {
@@ -108,9 +65,18 @@ body {
         }
     }
 
+    .links {
+        p, a, a:active, a:visited {
+            font-size: 2vw;
+            color: var(--dropdown-text-color);
+            text-decoration: none;
+        }
+    }
+
     .dropdown {
         display: inline-block;
         position: relative;
+        transform: translateX(21.5vw);
 
         .dropdown-content {
             display: none;
@@ -131,6 +97,7 @@ body {
                 background-color: #00A4BD;
             }
         }
+
     }
 
     .dropdown:hover .dropdown-content {
