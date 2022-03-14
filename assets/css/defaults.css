@@ -41,6 +41,7 @@ body {
   bottom: 0px;
   left: 0px;
   font-family: "Comic Sans MS", cursive;
+  min-height: 100%;
 }
 
 .main-content .title {
