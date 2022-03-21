@@ -38,4 +38,4 @@ A crowdsourcing idea could be a schoolwide website where students can submit the
 
 - What about Del Norte crowdsourcing? Could your final project be better with crowdsourcing?
 
-Del Norte crowdsourcing could be effective in an environment where many opinions are needed (i.e. a ratings or recommendation website). My final project would not be better with crowdsourcing, as only 1-2 people are posting blog posts at any given time and doesn't need outside input.
+Del Norte crowdsourcing could be effective in an environment where many opinions are needed (i.e. a ratings or recommendation website). My final project would not be better with crowdsourcing, as only 1-2 people are posting blog posts at any given time and doesn 't need outside input.
