@@ -147,6 +147,7 @@ The identified procedure finds the lowest score in the given list of scores and 
 The alogrithm identified starts by initializing two variables; the minimum score and the minimum score's index. The algorithm assigns these two variables ridiculous values (as opposed to something like 0) so that it's guaranteed to find at least one minimum value in the list. Then, the function iterates through each of the elements in the list. If it finds an element that is lower than the current minimum value, then it will set the minimum value to that new value and the index to the current index it is checking. At the end, the program will return the index of that minimum value.
 
 *3di. Describes two calls to the procedure identified in written response 3c. Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.*
+
 First call:
 
     find_lowest_score([1, 2, 3, 4, 5, 6, 7])
@@ -156,6 +157,7 @@ Second call:
     find_lowest_score([95, 90, 89, 100, 93])
 
 *3dii. Describes what condition(s) is being tested by each call to the procedure*
+
 Condition(s) tested by the first call:
 
     if scores[0] < min: # only time that this if statement is true
