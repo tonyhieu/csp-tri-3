@@ -13,3 +13,7 @@ I knew that the World Wide Web was a collection of web pages and data, but I tho
 **Question 23**
 
 I would argue that someone having your IP address is much more dangerous than someone having your browser cookies. Sure, with browser cookies, someone could access your passwords and such, but with an IP address, someone could kill your internet, brick your computer, find out where you live, and get a plethora of your personal information. In the future, I'll remember that the College Board considers cookies more important to your privacy than your IP address.
+
+## MCQ 2
+
+Perfect score
