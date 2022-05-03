@@ -17,3 +17,9 @@ I would argue that someone having your IP address is much more dangerous than so
 ## MCQ 2
 
 Perfect score
+
+## MCQ 3
+
+**Question 41**
+
+I didn't know how public key cryptography worked. I knew that you had to use the public key to encrypt the message, but it makes sense that you also use the public, not private, to decrypt it.
